@@ -1,0 +1,404 @@
+
+
+/* Variables de color */
+:root {
+    --oscuro: #1F2235;
+    --gris: #292C3E;
+    --blanco: #fff;
+    --rojo: #F14853;
+
+    --titulos: 70px;
+    --subtitulos: 35px;
+    --texto: 20px;
+
+    --transiciones: 0.5s;
+
+    scroll-behavior: smooth;
+}
+
+html {
+  
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+  background-color: var(--oscuro);
+}
+
+/* Estilos de la barra de navegación */
+
+nav {
+  height: 80px;
+  background-color: var(--oscuro);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: solid 1px var(--gris);
+}
+
+.menu-toggle{
+  display: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.menu-toggle img{
+  width: 40px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: var(--titulos);
+  font-weight: bold;
+}
+
+.logo a:hover {
+  color: var(--rojo);
+  transition: var(--transiciones);
+}
+
+#menu {
+  margin-left: auto;
+}
+
+#menu ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+#menu ul li a{
+  display: inline-block;
+  position: relative;
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 0 8px;
+  margin: 2px;
+  transition: var(--transiciones);
+}
+
+#menu ul li a:hover{
+    background-color: var(--gris);
+    transition: var(--transiciones);
+}
+
+.show {
+  height: auto!important;
+}
+
+/* Estilos del home*/
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: solid 1px var(--gris);
+}
+
+.homeIzquierda {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  padding: 100px 40px;
+  justify-content: center;
+}
+
+.homeIzquierda h1{
+  font-size: var(--titulos);
+  color: var(--blanco);
+  margin: 20px 0px;
+}
+
+.homeIzquierda button {
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: var(--rojo);
+  color: var(--blanco);
+  font-size: var(--texto);
+  font-weight: bold;
+}
+
+.homeIzquierda button:hover {
+  transform: scale(1.1);
+  transition: var(--transiciones);
+  cursor: pointer;
+}
+
+.homeDerecha {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--gris);
+}
+
+.homeDerecha img{
+  width: 300px;
+  height: 450px;
+  filter: grayscale(100);
+}
+
+/* Estilos sobre mi*/
+.sobreMi {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: solid 1px var(--gris);
+}
+
+.textoInferiorIzquierda {
+  width: 50%;
+}
+
+.textoInferiorIzquierda h1{
+  color: var(--rojo);
+  font-size: var(--titulos);
+  margin: 10px 100px;
+  text-align: center;
+}
+
+.textoInferiorDerecha{
+  width: 50%;
+  font-size: var(--texto);
+}
+
+.textoInferiorDerecha p{
+  margin: 15px 0px;
+  font-size: var(--texto);
+}
+
+.imagenSuperior img{
+  width: 100%;
+  height: 400px;
+  filter: grayscale(100);
+}
+
+.textoInferior {
+  padding: 30px;
+  display: flex;
+  flex-flow: row;
+  color: var(--blanco);
+}
+
+/* Estilos servicios */
+
+.servicios {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 30px;
+  border-bottom: solid 1px var(--gris);
+}
+
+.serviciosSuperior h1 {
+  font-size: var(--titulos);
+  color: var(--rojo);
+  text-align: center;
+  margin: 30px;
+}
+
+.serviciosInferior {
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 10%;
+}
+
+.servicioProducto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+}
+
+.servicioProducto:hover{
+  transform: scale(1.1);
+  background-color: var(--gris);
+  transition: var(--transiciones);
+}
+
+.servicioProducto h3{
+  color: var(--blanco);
+}
+
+.servicioProducto img {
+  width: 100px;
+  margin: 10px;
+}
+
+.servicioProducto a{
+  text-decoration: none;
+}
+
+/* Estilos porque elegirme */
+
+.porqueElegirmeContenedorRazon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.porqueElegirmeIzquierda img {
+  width: 100px;
+}
+
+.porqueElegirmeDerecha h2{
+    color: var(--rojo);
+}
+
+.contacto {
+  width: 100%;
+}
+
+.contacto h1{
+  color: var(--rojo);
+  font-size: var(--titulos);
+  padding: 5px;
+  text-align: center;
+}
+
+.contacto p{
+  color: var(--blanco);
+  font-size: var(--texto);
+  text-align: center;
+  padding: 5px;
+}
+
+.contacto h2{
+  color: var(--blanco);
+  text-align: center;
+  padding: 5px;
+}
+
+.redesSociales {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redesSociales img{
+  width: 100px;
+}
+
+.redesSociales img:hover{
+  transform: scale(1.1);
+  background-color: var(--gris);
+  transition: 0.5s;
+}
+
+
+/* Estilos presentación */
+
+.presentacion {
+  border-top: solid 1px var(--gris);
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px;
+  border-bottom: solid 1px var(--gris);
+}
+
+.presentacionIzquierda {
+  width: 50%;
+  color: var(--blanco);
+  font-size: var(--subtitulos);
+  padding: 50px;
+  text-align: justify;
+}
+
+.presentacionDerecha {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--gris);
+}
+
+.presentacionDerecha img{
+  width: 90%;
+}
+
+/* Estilos mobiles */
+
+@media screen and (max-width: 870px) {
+  
+  .menu-toggle {
+    display: block;
+  }
+
+  #menu {
+    background-color: var(--oscuro);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border: 1px solid var(--gris);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+
+  #menu ul li {
+    display: block;
+    text-align: center;
+  }
+
+  #menu ul li a{
+    color: var(--blanco);
+    border-bottom: 1px solid var(--gris);
+    width: 100%;
+  }
+  
+  .homeIzquierda {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .homeDerecha {
+    display: none;
+  }
+
+  .textoInferior {
+    flex-direction: column;
+  }
+
+  .textoInferiorIzquierda, .textoInferiorDerecha {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .presentacionIzquierda {
+  width: 100%;
+}
+
+.presentacionDerecha {
+  width: 100%;
+}
+
+#sobreMi, #servicios, #porqueElegirme, #contacto {
+  padding: 0;
+  margin: 0;
+  font-size: 60px;
+}
+
+
+}
